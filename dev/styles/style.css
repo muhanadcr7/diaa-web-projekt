@@ -1,0 +1,481 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* =========================================================
+   HEADER
+========================================================= */
+header {
+    background: white;
+    position: sticky;
+    top: 0;
+    height: 160px;
+}
+
+.navbar {
+    top: 0;
+    z-index: 1000;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+    height: 160px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: auto;
+    height: 50px;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: #0077cc;
+    font-size: 14px;
+}
+
+/* =========================================================
+   INTRO
+========================================================= */
+/* Bestehendes CSS */
+.intro {
+    background: #ffffff;
+}
+
+.vorstellen {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.vorstellen a {
+    padding: 0;
+    display: inline-block;
+}
+
+/* NEU: Basis-Stil des Bildes */
+.vorstellen a img {
+    /* Definiert die ursprüngliche Größe des Bildes (passen Sie '100px' nach Bedarf an) */
+    width: 100px;
+    padding-top: 20px;
+    margin-bottom: 3px;
+}
+
+
+/* Bestehendes CSS */
+.vorstellen h1 {
+    font-family: 'DIN 2014', "FF DIN", "Bahnschrift", "Arial Narrow", sans-serif;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.blue {
+    color: #0077cc;
+}
+
+.vorstellen p {
+    margin-top: 0;
+    line-height: 1.7;
+    color: #9BB1C0;
+}
+
+/* =========================================================
+   ZIELE – TITLE
+========================================================= */
+.goals-title {
+    text-align: center;
+    padding: 60px 20px 20px;
+    background: #bed8fb50;
+}
+
+.goals-title h2 {
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.goals-title p {
+    font-size: 13px;
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   ZIELE – GRID
+========================================================= */
+.goals {
+    background: #bed8fb50;
+}
+
+.goals-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 120px;
+}
+
+.goal-card {
+    background: white;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.goal-card img {
+    width: 40px;
+    /* Größe des Icons */
+    height: 40px;
+
+    padding: 20px;
+    /* Abstand zum Rand → ergibt größeren Kreis */
+    background-color: rgba(0, 119, 204, 0.15);
+    border-radius: 50%;
+
+    display: block;
+    margin: 0 auto;
+
+    object-fit: contain;
+    /* verhindert Abschneiden */
+    box-sizing: content-box;
+    /* wichtig: Padding wird NICHT in width eingerechnet */
+}
+
+
+
+.goal-card h3 {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+.goal-card ul {
+    padding-left: 20px;
+    color: #9BB1C0;
+}
+
+.goal-card li {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   ÜBER UNS
+========================================================= */
+.ueber-uns {
+    background: white;
+}
+
+.ueber-uns-teile {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.ueber-uns-teile h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.ueber-uns-teile p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #9BB1C0;
+}
+
+/* =========================================================
+   KONTAKT – SECTION
+========================================================= */
+.contact-section {
+    background: #bed8fb50;
+}
+
+.kontakt-teil {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 60px 20px 120px;
+    text-align: center;
+}
+
+.kontakt-teil h2 {
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Form-Karte */
+.contact-card {
+    background: white;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+/* Formulare */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 6px;
+    color: #0077cc;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    font-size: 14px;
+    outline: none;
+    background: #bed8fb50;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #2a7fb8;
+}
+
+/* Senden Button */
+.send-button {
+    margin-top: 25px;
+    padding: 12px 25px;
+    font-size: 15px;
+    background: #3C99DC;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.send-button:hover {
+    background: #2a7fb8;
+}
+
+/* =========================================================
+   FOOTER
+========================================================= */
+.main-footer {
+    background: #517696;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+}
+
+.main-footer p {
+    margin: 5px 0;
+}
+
+.main-footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-footer a:hover {
+    text-decoration: underline;
+}
+
+/* =========================================================
+   COOKIE-BANNER (bereinigt!)
+========================================================= */
+#cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+    display: none;
+}
+
+#cookieBanner button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+#acceptCookies {
+    background: #4CAF50;
+    color: white;
+}
+
+#declineCookies {
+    background: #f44336;
+    color: white;
+}
+
+/* =========================================================
+   FORM-MESSAGE BOXEN (JS Feedback)
+========================================================= */
+.success-box,
+.error-box {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.success-box {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.error-box {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+@media (max-width: 900px) {
+    .navbar {
+        padding: 15px 20px;
+        max-width: 100%;
+    }
+
+    nav a {
+        margin-left: 15px;
+        font-size: 13px;
+    }
+
+    .vorstellen,
+    .ueber-uns-teile,
+    .kontakt-teil {
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .goals-cards {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding: 30px 20px 80px;
+    }
+
+    .goal-card,
+    .contact-card {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 600px) {
+    .logo {
+        width: 90px;
+        height: 30px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 0 10px;
+        font-size: 13px;
+    }
+
+    .vorstellen h1,
+    .ueber-uns-teile h1 {
+        font-size: 20px;
+    }
+
+    .vorstellen p,
+    .ueber-uns-teile p {
+        font-size: 11px;
+    }
+
+    .goals-title {
+        padding: 40px 15px 15px;
+    }
+
+    .goal-card {
+        padding: 25px 20px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 13px;
+        padding: 10px 12px;
+    }
+
+    .send-button {
+        width: 100%;
+        padding: 12px 0;
+        font-size: 14px;
+    }
+
+    .main-footer {
+        padding: 30px 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar {
+        gap: 6px;
+    }
+
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .goal-card li {
+        font-size: 13px;
+    }
+
+    .contact-card {
+        padding: 20px 15px;
+    }
+}

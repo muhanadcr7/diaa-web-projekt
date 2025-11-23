@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cookie Banner</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  #cookieBanner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #222;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    z-index: 1000;
+  }
+  #cookieBanner button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  #acceptCookies { background: #4CAF50; color: white; }
+  #declineCookies { background: #f44336; color: white; }
+  #pageContent {
+    padding: 20px;
+  }
+</style>
+</head>
+<body>
+
+<div id="cookieBanner">
+  Diese Webseite verwendet Cookies. Bitte akzeptiere unsere Datenschutzerklärung.
+  <button id="acceptCookies">Akzeptieren</button>
+  <button id="declineCookies">Ablehnen</button>
+</div>
+
+<div id="pageContent">
+  <h1>Willkommen auf der Webseite!</h1>
+  <p>Hier ist der Seiteninhalt, der blockiert wird, bis Cookies akzeptiert sind.</p>
+</div>
+
+<script>
+  const banner = document.getElementById('cookieBanner');
+  const acceptBtn = document.getElementById('acceptCookies');
+  const declineBtn = document.getElementById('declineCookies');
+  const content = document.getElementById('pageContent');
+
+  // Seite blockieren, bis Cookies akzeptiert
+  content.style.display = 'none';
+
+  // Prüfen, ob Cookies bereits akzeptiert wurden
+  if (localStorage.getItem('cookiesAccepted') === 'true') {
+    banner.style.display = 'none';
+    content.style.display = 'block';
+  }
+
+  // Akzeptieren
+  acceptBtn.addEventListener('click', () => {
+    localStorage.setItem('cookiesAccepted', 'true');
+    banner.style.display = 'none';
+    content.style.display = 'block';
+  });
+
+  // Ablehnen
+  declineBtn.addEventListener('click', () => {
+    alert('Du musst Cookies akzeptieren, um diese Seite zu nutzen!');
+    window.location.href = 'https://www.google.com'; // Nutzer wird rausgeleitet
+  });
+</script>
+
+</body>
+</html>
