@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deutsche & Syrische Jurist:innen</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+</head>
+
+<body>
+
+<!-- COOKIE BANNER -->
+<div id="cookieBanner" class="cookie-banner" role="dialog" aria-live="polite">
+    <span>Diese Webseite verwendet Cookies. Bitte akzeptiere unsere Datenschutzerklärung.</span>
+    <div class="cookie-actions">
+        <button id="acceptCookies" type="button">Akzeptieren</button>
+        <button id="declineCookies" type="button">Ablehnen</button>
+    </div>
+</div>
+
+<header>
+    <div class="navbar">
+
+        <a href="#" class="logo">
+            <img src="../assets/logo.png" alt="Deutsche & Syrische Jurist:innen" />
+        </a>
+
+        <nav>
+            <a href="#">Hauptseite</a>
+            <a href="#ueber-uns">Über uns</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+    </div>
+</header>
+
+<!-- Intro Section -->
+<section class="intro">
+    <div class="vorstellen">
+        <a href="#">
+            <img src="../assets/logo.png" alt="Deutsche & Syrische Jurist:innen" />
+        </a>
+        <h1>Deutsche & Syrische  <br><span class="blue">Jurist:innen</span></h1>
+        <p>
+           Der Verein Deutsche & Syrische Jurist:innen wurde initiiert von Diaa Bek Shkeer, einem Jurastudenten syrischer Herkunft, und etabliert, um eine strukturelle Plattform für den Fachaustausch zu schaffen. Die Gründungsaktivitäten wurden maßgeblich durch die engagierte Unterstützung von drei weiteren Studierenden unterschiedlicher akademischer Disziplinen vorangetrieben. Die zentrale Ausrichtung des Vereins manifestiert sich in der Verfolgung dreier Kernziele: die nachhaltige Steigerung der Sichtbarkeit syrischer Jurastudierender und Jurist:innen im deutschen Rechtswesen; die umfassende Förderung sämtlicher Jurastudierender, insbesondere durch zielgerichtete Studienunterstützung und Vermittlung von Examenswissen; sowie die effektive Vernetzung und Vertretung syrischer und
+ internationaler Jurist:innen in Deutschland, um den interkulturellen Fachaustausch zu intensivieren.
+        </p>
+    </div>
+</section>
+
+<!-- Ziele Überschrift -->
+<section class="goals-title">
+    <h2>Unsere Ziele</h2>
+    <p>
+        Um diese Vision zu realisieren, gliedern sich unsere vielfältigen Aktivitäten in die folgenden zentralen Ziele und Arbeitsbereiche
+    </p>
+</section>
+
+<!-- Ziele Boxen -->
+<section class="goals">
+    <div class="goals-cards">
+
+        <div class="goal-card">
+            <img src="../assets/wourld.png">
+            <h3>Sichtbarkeit und Vernetzung<br> syrischer Jurastudierender</h3>
+            <ul>
+                <li>Sichtbarmachung syrischer Jurastudierender im rechtswissenschaftlichen Bereich in Deutschland.</li>
+                <li>Demonstration ihrer fachlichen Relevanz in der juristischen Landschaft.</li>
+                <li>Schaffung eines strukturierten Raumes für den interkulturellen Austausch und die gegenseitige Unterstützung.</li>
+            </ul>
+        </div>
+
+        <div class="goal-card">
+             <img src="../assets/buch.png">
+            <h3>Studien- und Karriereförderung für alle Jurastudierende</h3>
+            <ul>
+                <li>Unterstützung beim Studieneinstieg und gezielte Studienberatung.</li>
+                <li>Vermittlung von Examenswissen und spezifischen Beratungen zur mündlichen Prüfung.</li>
+                <li>Organisation von Workshops zur Weiterbildung in relevanten juristischen und überfachlichen Kompetenzen.</li>
+                <li>Angebote durch Partnerschaften und Aufbau eines breiten juristischen Netzwerks.</li>
+            </ul>
+        </div>
+
+        <div class="goal-card">
+             <img src="../assets/menschen.png">
+            <h3>Unterstützung ausländischer Jurist:innen</h3>
+            <ul>
+                <li>Umfassende Unterstützung beim Anerkennungsverfahren ausländischer juristischer Qualifikationen.</li>
+                <li>Schaffung von Einstiegsmöglichkeiten in die juristische Arbeitswelt und den deutschen Arbeitsmarkt.</li>
+            </ul>
+        </div>
+
+        <div class="goal-card">
+             <img src="../assets/waage.png">
+            <h3>Brückenfunktion im Rechtswesen zwischen Deutschland und Syrien</h3>
+            <ul>
+                <li>Schaffung eines rechtswissenschaftlichen Dialogs (DE-SY).</li>
+                <li>Organisation von Foren für den juristischen Fachaustausch.</li>
+                <li>Beginn des rechtsvergleichenden Austauschs über die Rechtsordnungen.</li>
+                <li>Aufbau der Zusammenarbeit mit juristischen Institutionen (DE-SY).</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- Über uns -->
+<section class="ueber-uns" id="ueber-uns">
+    <div class="ueber-uns-teile">
+        <h1>Wer vertritt den Verein?</h1>
+        <p>
+            Der Verein Deutsche & Syrische Jurist:innen wird derzeit durch seinen Gründer, Diaa Bek Shkeer,
+            vertreten. Er ist die alleinvertretungsberechtigte Person ...
+        </p>
+    </div>
+</section>
+
+<!-- Kontakt -->
+<section class="contact-section" id="kontakt">
+    <div class="kontakt-teil">
+        <h2>Kontakt</h2>
+
+        <!-- Hinweis: PHP-basiertes Anzeigen entfernt, jetzt wird JS genutzt -->
+        <!-- Formular sendet an pwd.php (Backend) -->
+        <form id="contactForm" class="contact-card" method="post" action="pwd.php">
+            <div class="form-group">
+                <label for="nachname">Nachname</label>
+                <input type="text" id="nachname" name="nachname" required>
+            </div>
+            <div class="form-group">
+                <label for="vorname">Vorname</label>
+                <input type="text" id="vorname" name="vorname" required>
+            </div>
+            <div class="form-group">
+                <label for="status">Status</label>
+                <select id="status" name="status" required>
+                    <option value="">Bitte auswählen</option>
+                    <option value="Student">Student</option>
+                    <option value="Jurist">Jurist</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">E-Mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="nachricht">Nachricht</label>
+                <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="send-button">Senden</button>
+        </form>
+
+        <!-- Ein einzelnes Ergebnis-Element: sichtbar NACH dem Absenden -->
+        <div id="formMessage" aria-live="polite"></div>
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="main-footer">
+    <p><a href="../datenschutz/index.html">Datenschutz</a></p>
+    <p><a href="../impressum/index.html">Impressum</a></p>
+</footer>
+
+<!-- ========== JavaScript (unten, sauber) ========== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    /* ---------------- Cookie Banner ---------------- */
+    const cookieBanner = document.getElementById("cookieBanner");
+    const acceptBtn = document.getElementById("acceptCookies");
+    const declineBtn = document.getElementById("declineCookies");
+
+    // Sicherheitsprüfung: falls Elemente fehlen, nichts tun
+    if (cookieBanner && acceptBtn && declineBtn) {
+        // Wenn Entscheidung bereits gespeichert, Banner ausblenden
+        if (localStorage.getItem("cookiesDecision")) {
+            cookieBanner.style.display = "none";
+        } else {
+            cookieBanner.style.display = "flex";
+            cookieBanner.style.justifyContent = "center";
+            cookieBanner.style.alignItems = "center";
+            cookieBanner.style.gap = "12px";
+        }
+
+        acceptBtn.addEventListener("click", function () {
+            localStorage.setItem("cookiesDecision", "accepted");
+            cookieBanner.style.display = "none";
+        });
+
+        declineBtn.addEventListener("click", function () {
+            localStorage.setItem("cookiesDecision", "declined");
+            cookieBanner.style.display = "none";
+        });
+    }
+
+    /* --------------- Kontaktformular-Handling --------------- */
+    const contactForm = document.getElementById("contactForm");
+    const formMessage = document.getElementById("formMessage");
+
+    // Hilfsfunktion, um Nachricht anzuzeigen
+    function showFormMessage(type, text) {
+        formMessage.className = ""; // reset
+        if (type === "success") {
+            formMessage.classList.add("success-box");
+        } else if (type === "error") {
+            formMessage.classList.add("error-box");
+        }
+        formMessage.textContent = text;
+        formMessage.style.display = "block";
+        // Optional: nach 6s ausblenden
+        setTimeout(() => { formMessage.style.display = "none"; }, 6000);
+    }
+
+    if (contactForm) {
+        contactForm.addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            // vorherige Nachricht ausblenden
+            formMessage.style.display = "none";
+            formMessage.textContent = "";
+            formMessage.className = "";
+
+            const formData = new FormData(contactForm);
+
+            try {
+                const response = await fetch(contactForm.action || "pwd.php", {
+                    method: "POST",
+                    body: formData,
+                    credentials: "same-origin"
+                });
+
+                // Versuche JSON zu lesen (Backend soll { success: true } senden)
+                let data;
+                try {
+                    data = await response.json();
+                } catch (jsonErr) {
+                    data = null;
+                }
+
+             if (response.ok) {
+    // Erfolg, egal ob JSON kommt oder nicht
+    showFormMessage("success", "Danke! Ihre Nachricht wurde erfolgreich gesendet.");
+    contactForm.reset();
+} else {
+    // nur bei echtem Serverfehler (500 usw.)
+    showFormMessage("error", "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
+}
+
+
+            } catch (err) {
+                showFormMessage("error", "Fehler beim Senden der Nachricht. Bitte versuchen Sie es erneut.");
+                console.error("Kontaktformular-Fehler:", err);
+            }
+        });
+    }
+
+});
+</script>
+
+</body>
+</html>
